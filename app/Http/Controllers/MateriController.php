@@ -79,7 +79,7 @@ class MateriController extends Controller
         if ($request->hasFile('file')) {
             // Hapus file lama jika ada
             if ($materi->file) {
-                \Storage::delete($materi->file);
+                Storage::delete($materi->file);
             }
             $materi->file = $request->file('file')->store('materi_files', 'public');
         }

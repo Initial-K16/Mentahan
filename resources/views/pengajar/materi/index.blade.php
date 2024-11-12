@@ -3,10 +3,8 @@
 @section('title', 'Kelola Materi')
 
 @section('content')
+<div class="container-fluid py-3">
 <div class="row">
-    <div class="col-md-2">
-        @include('layouts.sidebar.pengajar-sidebar') <!-- Menyertakan sidebar -->
-    </div>
     <div class="col-md-10">
         <div class="card shadow-sm border-0">
             <div class="card-header bg-white d-flex justify-content-between align-items-center">
@@ -86,6 +84,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <style>

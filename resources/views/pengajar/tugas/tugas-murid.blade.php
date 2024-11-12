@@ -3,10 +3,8 @@
 @section('title', 'Daftar Pengumpulan Tugas')
 
 @section('content')
+<div class="container-fluid py-4">
 <div class="row">
-    <div class="col-md-2">
-        @include('layouts.sidebar.pengajar-sidebar')
-    </div>
     <div class="col-md-10">
         <div class="card shadow-sm mb-4">
             <div class="card-header">
@@ -68,6 +66,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 @push('styles')

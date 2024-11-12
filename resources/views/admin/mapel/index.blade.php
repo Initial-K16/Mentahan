@@ -5,15 +5,12 @@
 @section('content')
 <div class="container-fluid py-4">
     <div class="row">
-        <div class="col-md-2 d-none d-md-block">
-            @include('layouts.sidebar.admin-sidebar')
-        </div>
         <div class="col-md-10">
             <div class="card shadow-sm">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h2 class="card-title mb-0">
-                            <i class="bi bi-book-fill text-primary me-2"></i>Data Mata Pelajaran
+                            <i class="bi bi-book-half text-primary me-2"></i>Data Mata Pelajaran
                         </h2>
                         <a href="{{ route('mapel.create') }}" class="btn btn-primary">
                             <i class="bi bi-plus-circle"></i> Tambah Mapel

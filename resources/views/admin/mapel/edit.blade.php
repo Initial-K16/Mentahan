@@ -5,9 +5,6 @@
 @section('content')
 <div class="container-fluid py-4">
     <div class="row">
-        <div class="col-md-2 d-none d-md-block">
-            @include('layouts.sidebar.admin-sidebar')
-        </div>
         <div class="col-md-10">
             <div class="card shadow-sm">
                 <div class="card-body">

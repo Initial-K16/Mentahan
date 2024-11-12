@@ -3,10 +3,8 @@
 @section('title', 'Daftar Materi/Tugas yang Di-Upload')
 
 @section('content')
+<div class="container-fluid py-4">
 <div class="row">
-    <div class="col-md-2">
-        @include('layouts.sidebar.pengajar-sidebar')
-    </div>
     <div class="col-md-10">
         <!-- Table Section -->
         <div class="card shadow-sm border-0 mb-4">
@@ -89,6 +87,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <style>

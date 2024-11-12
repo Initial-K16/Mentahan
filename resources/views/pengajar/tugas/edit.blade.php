@@ -3,10 +3,8 @@
 @section('title', 'Edit Tugas')
 
 @section('content')
+<div class="container-fluid py-4">
 <div class="row">
-    <div class="col-md-2">
-        @include('layouts.sidebar.pengajar-sidebar')
-    </div>
     <div class="col-md-10">
         <div class="card shadow-sm border-0">
             <div class="card-header bg-white">
@@ -58,6 +56,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>

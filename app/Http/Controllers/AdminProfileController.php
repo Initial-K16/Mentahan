@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Storage;
+use App\Models\User;
+use App\Models\Kelas;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use App\Models\User;
-use App\Models\Kelas;
 
 class AdminProfileController extends Controller
 {
@@ -55,7 +56,7 @@ class AdminProfileController extends Controller
         if ($request->hasFile('profile_photo')) {
             // Hapus foto lama jika ada
             if ($admin->profile_photo) {
-                \Storage::delete('public/profile_photos/' . $admin->profile_photo);
+                Storage::delete('public/profile_photos/' . $admin->profile_photo);
             }
         
             // Simpan foto profil baru
